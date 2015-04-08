@@ -1,0 +1,45 @@
+{
+  "tests" : [ {
+    "name" : "Home on mobile device",
+    "startedAt" : 1428510648389,
+    "endedAt" : 1428510652996,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 14,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 14
+    },
+    "testId" : "1-home-on-mobile-device",
+    "failed" : false,
+    "duration" : 4607
+  }, {
+    "name" : "Home on tablet device",
+    "startedAt" : 1428510652996,
+    "endedAt" : 1428510657023,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 16,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 16
+    },
+    "testId" : "2-home-on-tablet-device",
+    "failed" : false,
+    "duration" : 4027
+  }, {
+    "name" : "Home on desktop device",
+    "startedAt" : 1428510657023,
+    "endedAt" : 1428510661019,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 16,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 16
+    },
+    "testId" : "3-home-on-desktop-device",
+    "failed" : false,
+    "duration" : 3996
+  } ]
+}

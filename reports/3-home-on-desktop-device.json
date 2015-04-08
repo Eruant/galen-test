@@ -1,0 +1,205 @@
+{
+  "testId" : "3-home-on-desktop-device",
+  "name" : "Home on desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:3000/home.html 1300x700",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check galen-tests/specs/home.spec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: galen-tests/specs/home.spec included tags: desktop",
+          "status" : "info",
+          "time" : 1428510660922,
+          "includedTags" : [ "desktop" ],
+          "sections" : [ {
+            "name" : "Header",
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside: screen 0px top left right",
+                "highlight" : [ "header", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 13
+                },
+                "name" : "height: 60px",
+                "highlight" : [ "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Navigation",
+            "objects" : [ {
+              "name" : "navigation",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside: screen 0px left",
+                "highlight" : [ "navigation", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 19
+                },
+                "name" : "below: header 0px",
+                "highlight" : [ "navigation", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 24
+                },
+                "name" : "width: 300px",
+                "highlight" : [ "navigation" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 25
+                },
+                "name" : "aligned horizontally all: main",
+                "highlight" : [ "navigation", "main" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 26
+                },
+                "name" : "near: main 0px left",
+                "highlight" : [ "navigation", "main" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "objects" : [ {
+              "name" : "main",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 45
+                },
+                "name" : "below: header 0px",
+                "highlight" : [ "main", "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Banner",
+            "objects" : [ {
+              "name" : "banner-panel",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 62
+                },
+                "name" : "below: header 0px",
+                "highlight" : [ "banner-panel", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 67
+                },
+                "name" : "inside: screen 0px right",
+                "highlight" : [ "banner-panel", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 68
+                },
+                "name" : "width: 300px",
+                "highlight" : [ "banner-panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 69
+                },
+                "name" : "near: main 0px right",
+                "highlight" : [ "banner-panel", "main" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 70
+                },
+                "name" : "aligned horizontally all: main",
+                "highlight" : [ "banner-panel", "main" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Footer",
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 86
+                },
+                "name" : "inside: screen 0px left right",
+                "highlight" : [ "footer", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 87
+                },
+                "name" : "below: banner-panel 0px",
+                "highlight" : [ "footer", "banner-panel" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galen-tests/specs/home.spec",
+                  "lineNumber" : 88
+                },
+                "name" : "height: 100px",
+                "highlight" : [ "footer" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "footer" : {
+              "area" : [ 0, 135, 1300, 100 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1300, 621 ]
+            },
+            "navigation" : {
+              "area" : [ 0, 60, 300, 75 ]
+            },
+            "banner-panel" : {
+              "area" : [ 1000, 60, 300, 75 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 1300, 60 ]
+            },
+            "main" : {
+              "area" : [ 300, 60, 700, 75 ]
+            }
+          },
+          "screenshot" : "layout-3-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1428510659709,
+        "type" : "node"
+      } ],
+      "time" : 1428510657024,
+      "type" : "node"
+    } ]
+  }
+}
