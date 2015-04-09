@@ -11,6 +11,7 @@
 @@ Table pages
     | pageUrl   | pageName  |
     | /         | home      |
+    | /about    | about     |
 
 @@ Parameterized using pages
 @@ Parameterized using devices

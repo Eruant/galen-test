@@ -1,16 +1,11 @@
+@@ import header.spec
+@@ import footer.spec
+
 ========================================
-header          css .header
 navigation      css .navigation
 main            css .main-container
 banner-panel    css .banner-panel
-footer          css .footer
 ========================================
-
-@ Header | *
-----------------------------------------
-header
-    inside: screen 0px top left right
-    height: 60px
 
 @ Navigation | *
 ----------------------------------------
@@ -60,6 +55,7 @@ main
 ----------------------------------------
 banner-panel
     below: header 0px
+    above: footer 0px
 
 @^ | desktop, tablet
 ----------------------------------------
@@ -79,10 +75,3 @@ banner-panel
 banner-panel
     inside: screen 0px left right
     height: > 50px
-
-@ Footer | *
-----------------------------------------
-footer
-    % inside: screen 0px left right
-    below: banner-panel 0px
-    height: 100px
