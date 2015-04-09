@@ -42,6 +42,7 @@ gulp.task('test', ['clean'], function (done) {
 
         // utility function
         galen = function galen(file, callback) {
+
             spawn('galen', [
                 'test',
                 file.path,

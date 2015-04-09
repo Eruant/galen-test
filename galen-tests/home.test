@@ -1,14 +1,19 @@
 @@ set
-    domain      localhost
-    base_url    https://${domain}/
+    domain      localhost:3000
+    base_url    http://${domain}
 
-@@ table devices
+@@ Table devices
     | device    | size      |
     | mobile    | 500x700   |
     | tablet    | 900x600   |
     | desktop   | 1300x700  |
 
-@@ parameterized using devices
-Home on ${device} device
-    ${websiteUrl} ${size}
-        check galen-tests/specs/home.spec --include "${device}"
+@@ Table pages
+    | urlPage   | spec  |
+    | /         | home  |
+
+@@ Parameterized using pages
+@@ Parameterized using devices
+${spec} on ${device} device
+    ${base_url}${urlPage} ${size}
+        check galen-tests/specs/${spec}.spec --include "${device}"
