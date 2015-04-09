@@ -1,7 +1,8 @@
 {
   "name": "galen-test",
   "scripts": {
-    "test": "galen test galen-tests/home.test -DwebsiteUrl=\"http://localhost:3000/home.html\" --htmlreport reports"
+    "start": "./node_modules/.bin/gulp localhost",
+    "test": "galen test galen-tests/home.test -DwebsiteUrl=\"http://localhost:3000/\" --htmlreport reports"
   },
   "devDependencies": {
     "async": "^0.9.0",
