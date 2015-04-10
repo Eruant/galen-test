@@ -18,10 +18,7 @@ var
     post = 3333,
 
     // folder to save reports to
-    reportsDir = 'reports',
-
-    // glob for test suits
-    suitesGlob = './galen-tests/*.test';
+    reportsDir = 'reports';
 
 gulp.task('clean', function (done) {
 
@@ -57,7 +54,7 @@ gulp.task('test', ['clean'], function (done) {
                 });
         };
 
-    gulp.src([suitesGlob])
+    gulp.src('./galen-tests/*.test')
         .pipe(tap(function (file) {
             files.push(file);
         }))
@@ -71,7 +68,7 @@ gulp.task('test', ['clean'], function (done) {
 
 });
 
-gulp.task('serve', ['test'], serve({
+gulp.task('test-server', ['test'], serve({
     'middleware': function (req, res, next) {
         index(reportsDir, {
             'filter':       false,
@@ -96,5 +93,4 @@ gulp.task('localhost', function () {
 
 });
 
-//gulp.task('default', ['serve']);
 gulp.task('default', ['localhost']);
